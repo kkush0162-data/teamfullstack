@@ -1,0 +1,135 @@
+.reset-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: radial-gradient(circle at top, #fff0f1 0%, #f9d7da 40%, #f4e2e4 100%);
+}
+
+.reset-card {
+  width: min(460px, 100%);
+  background: #ffffff;
+  border: 1px solid rgba(209, 32, 40, 0.12);
+  border-radius: 28px;
+  box-shadow: 0 24px 80px rgba(209, 32, 40, 0.12);
+  padding: 36px 32px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.reset-card:hover {
+  transform: translateY(-3px);
+}
+
+.card-top {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #fde7e9;
+  color: #d11729;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2.3vw, 2.6rem);
+  line-height: 1.05;
+  color: #22252a;
+}
+
+.card-top p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.reset-form {
+  display: grid;
+  gap: 18px;
+}
+
+.field-label {
+  display: grid;
+  gap: 12px;
+  color: #52575f;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.field-label input {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #e7d8d9;
+  padding: 16px 18px;
+  font-size: 1rem;
+  color: #22252a;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.field-label input:focus {
+  outline: none;
+  border-color: #d11729;
+  box-shadow: 0 0 0 4px rgba(209, 32, 40, 0.12);
+}
+
+.primary-button {
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  padding: 16px 18px;
+  background: #d11729;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 28px rgba(209, 32, 40, 0.25);
+  background: #a30f1a;
+}
+
+.success-message {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: #eaf7ef;
+  color: #1d6b35;
+  font-weight: 600;
+  text-align: center;
+}
+
+.back-link {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.back-link a {
+  color: #d11729;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.back-link a:hover {
+  color: #a30f1a;
+}
+
+@media (max-width: 520px) {
+  .reset-card {
+    padding: 28px 22px;
+  }
+
+  .primary-button {
+    padding: 15px 18px;
+  }
+}

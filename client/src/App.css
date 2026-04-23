@@ -1,3 +1,177 @@
+.home-page {
+  min-height: 100vh;
+  padding: 1.5rem;
+  background: radial-gradient(circle at top, #1e40af 0%, #0f172a 50%, #020617 100%);
+}
+
+.top-nav {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.hero {
+  width: min(1100px, 100%);
+  margin: 2.5rem auto 0;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 1.2rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.1;
+  margin: 0.9rem 0;
+}
+
+.hero-content p {
+  margin: 0;
+  color: #cbd5e1;
+  max-width: 60ch;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(96, 165, 250, 0.2);
+  color: #bfdbfe;
+  border: 1px solid rgba(191, 219, 254, 0.4);
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.hero-actions {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 0.82rem 1rem;
+  font-size: 0.96rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: #fff;
+}
+
+.secondary-btn {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+}
+
+.hero-panel {
+  background: rgba(15, 23, 42, 0.86);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 16px;
+  padding: 1.4rem;
+}
+
+.hero-panel h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.1rem;
+}
+
+.hero-panel ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  color: #cbd5e1;
+}
+
+.features {
+  width: min(1100px, 100%);
+  margin: 2rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.feature-card {
+  background: rgba(15, 23, 42, 0.86);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.feature-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.feature-card p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.cta {
+  width: min(1100px, 100%);
+  margin: 2rem auto;
+  background: rgba(14, 116, 144, 0.15);
+  border: 1px solid rgba(103, 232, 249, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.cta h2 {
+  margin: 0;
+  font-size: 1.55rem;
+}
+
+.cta p {
+  margin: 0.7rem 0 1rem;
+  color: #cbd5e1;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
 /* App.css */
 
 body {
